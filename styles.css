@@ -498,18 +498,21 @@ body {
 
 @media only screen and (min-width: 1024px) {
 	.article:hover .article_corner {
-		display: block;
+		opacity: 1;
+		transform: translate(0, 0);
 	}
 }
 
 .article_corner {
-	display: none;
 	position: absolute;
 	border: 0;
 	border: solid 0 #FAAF3F;
 	border-color: #FAAF3F;
 	width: 20px;
 	height: 20px;
+	transition: 0.1s;
+	transition-timing-function: cubic-bezier(0.81, 0.14, 1, 1);
+	opacity: 0;
 }
 
 .article_corner-topLeft {
@@ -517,6 +520,7 @@ body {
 	left: 8px;
 	border-top-width: 7px;
 	border-left-width: 7px;
+	transform: translate(-10px, -10px);
 }
 
 .article_corner-topRight {
@@ -524,6 +528,7 @@ body {
 	right: 8px;
 	border-top-width: 7px;
 	border-right-width: 7px;
+	transform: translate(10px, -10px);
 }
 
 .article_corner-bottomLeft {
@@ -531,6 +536,7 @@ body {
 	left: 8px;
 	border-bottom-width: 7px;
 	border-left-width: 7px;
+	transform: translate(-10px, 10px);
 }
 
 .article_corner-bottomRight {
@@ -538,6 +544,8 @@ body {
 	right: 8px;
 	border-bottom-width: 7px;
 	border-right-width: 7px;
+	transform: translate(10px, 10px);
+
 }
 
 .article_header {
