@@ -477,6 +477,7 @@ body {
 	padding-top: 150px;
 	z-index: 1;
 	color: #fff;
+	cursor: pointer;
 }
 
 .article_img {
@@ -1089,6 +1090,10 @@ body {
 	text-decoration: none;
 	margin-top: 4px;
 	display: block;
+}
+
+.post_article:hover {
+	color: #FAAF3F;
 }
 
 .series-inList {
