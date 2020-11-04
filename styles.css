@@ -24,8 +24,14 @@
 
 @font-face {
 	font-family: 'Brutal Type';
+	src: url('./src/fonts/Brutal-Medium.woff');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Brutal Type';
 	src: url('./src/fonts/Brutal-Bold.woff');
-	font-weight: bold;
+	font-weight: 700;
 }
 
 *,
